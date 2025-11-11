@@ -176,33 +176,35 @@ p {
 
 /* ------------------------------------------------- fourth section ------------------------------------------- */
 
-.edu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.fourth-section {
+  background-color: #f8f9fa;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #343a40;
 }
 
 .edu-card {
-  border-radius: 10px;
-  padding: 50px;
-  text-align: center;
-  background-color: rgb(15, 15, 15);
-  box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex: 1;
-  max-width: 350px;
+  border-radius: 8px;
 }
 
 .edu-card:hover {
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
-  transform: translateY(-4px);
-  box-shadow: none;
-  border: none;
-  background: none;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.edu-card h2 {
-  color: #ffd700;
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #007bff;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #495057;
 }
 
 /* ------------------------------------------------- fifth section ------------------------------------------- */

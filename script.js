@@ -1,18 +1,18 @@
 const progressBars = document.querySelectorAll(".circular");
-const slides = document.querySelectorAll('.slide');
-  let current = 0;
+// const slides = document.querySelectorAll('.slide');
+//   let current = 0;
 
-  document.querySelector('.next').addEventListener('click', () => {
-    slides[current].classList.remove('active');
-    current = (current + 1) % slides.length;
-    slides[current].classList.add('active');
-  });
+//   document.querySelector('.next').addEventListener('click', () => {
+//     slides[current].classList.remove('active');
+//     current = (current + 1) % slides.length;
+//     slides[current].classList.add('active');
+//   });
 
-  document.querySelector('.prev').addEventListener('click', () => {
-    slides[current].classList.remove('active');
-    current = (current - 1 + slides.length) % slides.length;
-    slides[current].classList.add('active');
-  });
+//   document.querySelector('.prev').addEventListener('click', () => {
+//     slides[current].classList.remove('active');
+//     current = (current - 1 + slides.length) % slides.length;
+//     slides[current].classList.add('active');
+//   });
 
 const animateProgress = (entries, observer) => {
   entries.forEach((entry) => {
