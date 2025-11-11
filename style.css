@@ -82,7 +82,7 @@ nav ul li a:hover {
 
 /* ------------------------------------------------ first section ----------------------------------------------- */
 
-/* Floating animation for image */
+
 .animate-float {
   animation: float 2s ease-in-out infinite;
 }
@@ -133,7 +133,7 @@ nav ul li a:hover {
 
 /*------------------------------------------------- third ------------------------------------------*/
 .third-sec {
-  background-color: #f8f9fa;
+  background-color: #f8f8fa;
 }
 
 .main-heading {
