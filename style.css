@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: rgb(152, 110, 110);
+  background-color: black;
   color: white;
   font-family: "poppins", sans-serif;
 }
@@ -101,16 +101,19 @@ nav ul li a:hover {
 
 .left-sec1 h2 {
   font-size: 2rem;
+  line-height: 2em;
 }
 
 .left-sec1 p {
   font-size: 1.5rem;
+  line-height: 1.5em;
 }
 
 .right-sec img {
   height: 300px;
   width: auto;
-  padding: 50px;
+  padding: 30px;
+  margin-top: 80px;
   animation: float 2s ease-in-out infinite;
 }
 
@@ -137,6 +140,28 @@ nav ul li a:hover {
 }
 
 .left-summary img {
+  height: 400px;
+  width: 300px;
+  border-radius: 50%;
+  
+}
+
+.right-summary p{
+    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: 2.2em;
+}
+
+/*------------------------------------------------- third ------------------------------------------*/
+.summary1 {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 0;
+  gap: 100px;
+  align-items: center;
+}
+
+/* .left-summary img {
   height: 200px;
   width: auto;
   border-radius: 50%;
@@ -144,7 +169,7 @@ nav ul li a:hover {
 
 .right-summary p{
     font-size: 1rem;
-}
+} */
 
 /* ------------------------------------------------- fourth section ------------------------------------------- */
 
@@ -281,7 +306,7 @@ nav ul li a:hover {
 
 .circular {
   height: 100%;
-  background: linear-gradient(90deg, #423de3, #3b03aa);
+  background: linear-gradient(180deg, #423de3, #3b03aa);
   width: 0;
   transition: width 1s ease-in-out;
 }
