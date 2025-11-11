@@ -351,3 +351,62 @@ nav ul li a:hover {
   border: none;
 }
 
+
+
+/*-------------------------------------- 7 th -------------------------------------*/
+
+.certifications {
+  padding: 40px;
+  background: black;
+  text-align: center;
+}
+
+/* .certifications h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+} */
+
+.slider {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(14, 14, 14, 0.1);
+}
+
+.slide-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+  color: #fff;
+  border: none;
+  font-size: 2em;
+  padding: 0 15px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.nav.prev {
+  left: 10px;
+}
+
+.nav.next {
+  right: 10px;
+}
