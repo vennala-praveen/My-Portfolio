@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: rgb(152, 110, 110);
   color: white;
   font-family: "poppins", sans-serif;
 }
@@ -140,5 +140,189 @@ nav ul li a:hover {
   height: 200px;
   width: auto;
   border-radius: 50%;
+}
+
+.right-summary p{
+    font-size: 1rem;
+}
+
+/* ------------------------------------------------- fourth section ------------------------------------------- */
+
+.edu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.edu-card {
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+  background-color: rgb(15, 15, 15);
+  box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  max-width: 350px;
+}
+
+.edu-card:hover {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+  transform: translateY(-4px);
+  box-shadow: none;
+  border: none;
+  background: none;
+}
+
+.edu-card h2 {
+  color: #ffd700;
+}
+
+/* ------------------------------------------------- fifth section ------------------------------------------- */
+
+.project-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 12px;
+  padding: 30px;
+  background-color: rgb(15, 15, 15);
+  flex-grow: 1;
+  max-width: 400px;
+
+  box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+  transform: translateY(-4px);
+  box-shadow: none;
+  border: none;
+  background: none;
+}
+
+.project-card-left {
+  max-width: 100%;
+}
+
+.project-card-left h2 {
+  color: #ffd700;
+}
+
+.project-card-right {
+  height: 250px;
+  width: 100%;
+  min-width: 250px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project-card-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+
+/*---------------------------------------------- 6th --------------------------------------*/
+
+.skills-tools {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+  gap: 40px;
+}
+
+.skills {
+  width: 50%;
+  text-align: left;
+}
+
+.skills h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.skill {
+  margin: 15px 0;
+}
+
+.skill p {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.circular-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.circular-bar {
+  flex: 1;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.circular {
+  height: 100%;
+  background: linear-gradient(90deg, #423de3, #3b03aa);
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+.percentage {
+  font-weight: bold;
+  min-width: 40px;
+  text-align: right;
+}
+
+
+.tools {
+  width: 50%;
+  text-align: left;
+}
+
+.tools h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.tool-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 20px;
+}
+
+.tool-list li {
+  font-size: 18px;
+  background-color: rgb(15, 15, 15);
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-list li:hover {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+  transform: translateY(-4px);
+  background: none;
+  border: none;
 }
 
