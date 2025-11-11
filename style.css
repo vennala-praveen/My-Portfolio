@@ -82,38 +82,8 @@ nav ul li a:hover {
 
 /* ------------------------------------------------ first section ----------------------------------------------- */
 
-.first-sec1 {
-  display: flex;
-  position: relative;
-  /* background-color: #0077b5; */
-  justify-content: space-between;
-}
-
-.left-sec1 {
-  font-size: 3rem;
-  display: flex;
-  flex-direction: column;
-  padding-top: 100px;
-  /* justify-content: center; */
-  min-height: 450px;
-  height: auto;
-}
-
-.left-sec1 h2 {
-  font-size: 2rem;
-  line-height: 2em;
-}
-
-.left-sec1 p {
-  font-size: 1.5rem;
-  line-height: 1.5em;
-}
-
-.right-sec img {
-  height: 300px;
-  width: auto;
-  padding: 30px;
-  margin-top: 120px;
+/* Floating animation for image */
+.animate-float {
   animation: float 2s ease-in-out infinite;
 }
 
@@ -129,28 +99,37 @@ nav ul li a:hover {
   }
 }
 
+
 /* ------------------------------------------ Second section --------------------------------------------- */
 
-.summary {
-  display: flex;
-  flex-direction: row;
-  padding: 30px 0;
-  gap: 100px;
-  align-items: center;
+.second-sec {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #343a40;
+}
+
+.side-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.summary p {
+  font-size: 1.1rem;
+  color: #495057;
 }
 
 .left-summary img {
-  height: 400px;
-  width: 300px;
-  border-radius: 50%;
-  
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.right-summary p{
-    font-size: 1rem;
-    letter-spacing: normal;
-    line-height: 2.2em;
-}
 
 /*------------------------------------------------- third ------------------------------------------*/
 .summary1 {
@@ -516,4 +495,44 @@ textarea:focus {
 }
 .email {
   background: #d44638;
+}
+
+
+
+@media (max-width: 768px) {
+  .first-sec1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-tools {
+    flex-direction: column;
+  }
+
+  .skills, .tools {
+    width: 100%;
+  }
+
+  .contact-container {
+    padding: 20px;
+    width: 100%;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  .project-cards {
+    flex-direction: column;
+  }
+
+  .edu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .summary, .summary1 {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
