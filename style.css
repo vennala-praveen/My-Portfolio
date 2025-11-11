@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "poppins", sans-serif;
+}
+
+section {
+  padding: 0 50px;
+  margin: 100px 0;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  margin-top: 10px;
+}
+
+.highlight {
+  color: #3989be;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.side-heading {
+  color: rgb(194, 234, 143);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+/*-------nav ---*/
+.left {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  align-items: center;
+  height: 60px;
+  background-color: rgb(50, 49, 49);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 15px;
+  color: white;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: lightblue;
+}
+
+/* ------------------------------------------------ first section ----------------------------------------------- */
+
+.first-sec1 {
+  display: flex;
+  position: relative;
+  /* background-color: #0077b5; */
+  justify-content: space-between;
+}
+
+.left-sec1 {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  /* justify-content: center; */
+  min-height: 450px;
+  height: auto;
+}
+
+.left-sec1 h2 {
+  font-size: 2rem;
+}
+
+.left-sec1 p {
+  font-size: 1.5rem;
+}
+
+.right-sec img {
+  height: 300px;
+  width: auto;
+  padding: 50px;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ------------------------------------------ Second section --------------------------------------------- */
+
+.summary {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 0;
+  gap: 100px;
+  align-items: center;
+}
+
+.left-summary img {
+  height: 200px;
+  width: auto;
+  border-radius: 50%;
+}
+
