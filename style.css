@@ -316,7 +316,7 @@ p {
 
 .circular {
   height: 100%;
-  background: linear-gradient(180deg, #423de3, #3b03aa);
+  background: linear-gradient(180deg, #070707, #040404);
   width: 0;
   transition: width 1s ease-in-out;
 }
