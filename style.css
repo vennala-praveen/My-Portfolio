@@ -211,13 +211,13 @@ p {
 
 .fifth-section {
   background-color: black;
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 .project-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  /* gap: 30px; */
   justify-content: center;
 }
 
@@ -345,7 +345,7 @@ p {
   padding-left: 20px;
 }
 
-.tool-list li {
+.tool-list span {
   font-size: 18px;
   background-color: rgb(15, 15, 15);
   padding: 10px 15px;
@@ -354,7 +354,7 @@ p {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tool-list li:hover {
+.tool-list span:hover {
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
   transform: translateY(-4px);
   background: none;
