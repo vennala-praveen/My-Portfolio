@@ -71,3 +71,34 @@ function validateEmail(email) {
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return re.test(email);
 }
+
+
+// script.js
+
+(function () {
+  const btn = document.getElementById('backToTop');
+  const showAfter = 200; // px scrolled before showing
+
+  // Toggle visibility on scroll
+  const toggleButton = () => {
+    const scrolled = window.scrollY || document.documentElement.scrollTop;
+    if (scrolled > showAfter) {
+      btn.style.display = 'inline-flex';
+      btn.style.opacity = '1';
+    } else {
+      btn.style.opacity = '0';
+      btn.style.display = 'none';
+    }
+  };
+
+  // Smooth scroll to top
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  window.addEventListener('scroll', toggleButton, { passive: true });
+  btn.addEventListener('click', scrollToTop);
+
+  // Initial check
+  toggleButton();
+})();
